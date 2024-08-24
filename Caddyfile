@@ -1,0 +1,11 @@
+{
+        servers {
+                trusted_proxies static private_ranges
+        }
+}
+
+:80 {
+        encode gzip
+        root * /srv
+        file_server
+}
